@@ -8,6 +8,7 @@ import {
   StyleSheet,
   Platform,
 } from "react-native";
+import Card from "../UI/Card";
 
 //import { TouchableNativeFeedback } from "react-native-gesture-handler";
 
@@ -17,7 +18,7 @@ const ProdutItem = (props) => {
     TouchableCmp = TouchableNativeFeedback;
   }
   return (
-    <View style={styles.product}>
+    <Card style={styles.product}>
       <View style={styles.touchable}>
         <TouchableCmp onPress={props.onSelect} useForeground>
           <View>
@@ -32,7 +33,7 @@ const ProdutItem = (props) => {
           </View>
         </TouchableCmp>
       </View>
-    </View>
+    </Card>
   );
 };
 
